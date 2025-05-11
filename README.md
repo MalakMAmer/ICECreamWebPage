@@ -15,5 +15,5 @@ Welcome to the Ice Cream Website! This project is designed to give users an exci
 ## How to Run:
 1. Clone the repository
    ```bash
-   git clone https://github.com/pretty-bunny/ice-cream-website.git
+   git clone https://github.com/pretty-bunny/ICECreamWebPage.git
 
