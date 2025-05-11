@@ -1,0 +1,50 @@
+
+.moreinfoContainer{
+    width: 80%;
+    background-color: #ece5da;
+    height: 340px;
+    display: flex;
+    border-radius: 30px;
+    display: none;
+}
+.icecreamContainer::after{
+    content:"";
+    height: 0px;
+    width: 0px;
+    top: 21px;
+    left: -15px;
+    margin: 0px 15px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: rgba(255, 0, 0, 0) rgba(0, 0, 255, 0) #36171b rgba(255, 255, 0, 0);
+    transition: width 300ms ease;
+    top: 90%;
+    display: none;
+}
+.icecreamContainer.show-after::after {
+    display: block; /* show when class is added */
+}
+.moreinfoImage{
+    width: 340px;
+    border-radius: 30px;
+    margin-right: 2rem;
+}
+.moreInfoInnerContianer{
+    width: 50%;
+}
+.likeH4{
+    opacity: 0.4;
+    font-size: 20px;
+    margin: 0 0 25px 0;
+}
+.moreInfoInnerContianer h3{
+    margin:0;
+    height: 60px;
+}
+.moreInfoInnerContianer p , .moreInfoInnerContianer h3{
+    color: #36171b;
+}
+.moreInfoInnerContianer button{
+    height: 50px;
+    margin: 30px 40px 40px 0;
+}
