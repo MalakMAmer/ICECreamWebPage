@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 body{
     background-color: #f8f7f2;
@@ -15,8 +22,12 @@ body{
     list-style: none;
     margin: 0;
     padding: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
 }
 #navbar a{
     text-decoration: none;
@@ -32,6 +43,8 @@ body{
     top: 5.5%;
     margin: 3px 0px;
     background-color: #36171b2b;
+    -webkit-transition: width 300ms ease;
+    -o-transition: width 300ms ease;
     transition: width 300ms ease;
     right: 293px;
 }
@@ -43,6 +56,8 @@ body{
     margin: 3px 0px;
     background-color: #36171b2b;
     position: absolute;
+    -webkit-transition: width 300ms ease;
+    -o-transition: width 300ms ease;
     transition: width 300ms ease;
     right: 212px;
 }
@@ -54,6 +69,8 @@ body{
     margin: 3px 0px;
     background-color: #36171b2b;
     position: absolute;
+    -webkit-transition: width 300ms ease;
+    -o-transition: width 300ms ease;
     transition: width 300ms ease;
     right: 126px;
 }
@@ -65,6 +82,8 @@ body{
     margin: 3px 0px;
     background-color: #36171b2b;
     position: absolute;
+    -webkit-transition: width 300ms ease;
+    -o-transition: width 300ms ease;
     transition: width 300ms ease;
     right: 33px;
 }
@@ -74,15 +93,25 @@ body{
 }
 
 #bodyDiv{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #f8f7f2;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 90%;
 }
 .imageDiv{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 300px;
 }
 .lsideImage{
@@ -99,10 +128,19 @@ p span{
 #lsideBodyDiv{
     background-color: #ece5da;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 20px 0 0 20px;
 }
 #lsideBodyDiv p {
@@ -118,8 +156,11 @@ p span{
     border-radius: 0 0px 20px 0;
 }
 #buttonsDiv{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 15%;
 }
 #buttonsDiv button{
@@ -128,9 +169,15 @@ p span{
     border: none;
     background-color: white;
     color: #36171b;
+    -webkit-transition-property: opacity color font-weight box-shadow;
+    -o-transition-property: opacity color font-weight box-shadow;
     transition-property: opacity color font-weight box-shadow;
-    transition-duration: 400ms;
-    transition-timing-function: ease;
+    -webkit-transition-duration: 400ms;
+         -o-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
 }
 .inputboxs{
     width: 70%;
@@ -141,6 +188,22 @@ p span{
     border: 0.5px dashed rgba(69, 20, 3, 0.493);
     border-radius: 20px;
     padding: 0 25px;
+}
+.inputboxs::-webkit-input-placeholder{
+    padding: 0px;
+    color: rgba(99, 55, 0, 0.373);
+}
+.inputboxs::-moz-placeholder{
+    padding: 0px;
+    color: rgba(99, 55, 0, 0.373);
+}
+.inputboxs:-ms-input-placeholder{
+    padding: 0px;
+    color: rgba(99, 55, 0, 0.373);
+}
+.inputboxs::-ms-input-placeholder{
+    padding: 0px;
+    color: rgba(99, 55, 0, 0.373);
 }
 .inputboxs::placeholder{
     padding: 0px;
@@ -157,7 +220,8 @@ button:hover{
 }
 #logInDiv button , #signUpDiv button{
     display: block;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     margin: 15px;
     width: 70%;
     max-width: 300px;
@@ -165,21 +229,29 @@ button:hover{
     border: none;
     background-color: white;
     color: #36171b;
+    -webkit-transition-property: opacity color font-weight box-shadow;
+    -o-transition-property: opacity color font-weight box-shadow;
     transition-property: opacity color font-weight box-shadow;
-    transition-duration: 400ms;
-    transition-timing-function: ease;
+    -webkit-transition-duration: 400ms;
+         -o-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
 }
 #logInDiv{
     background-color: rgb(224, 190, 1);
     display: block;
     height: 85%;
     width: 100%;
-    align-content:center;
+    -ms-flex-line-pack:center;
+        align-content:center;
 }
 #signUpDiv{
     background-color: rgb(254, 145, 42);
     display: none;
     height: 85%;
-    align-content:center;
+    -ms-flex-line-pack:center;
+        align-content:center;
 }
 

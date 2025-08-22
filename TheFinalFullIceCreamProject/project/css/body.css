@@ -1,27 +1,54 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 #bodyContainer{
     background-color: #f8f7f2;
     padding: 180px 0;
 }
 #mainInnerContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .icecreamContainer{
-    flex: 0 0 25%;
-    box-sizing: border-box;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 200px;
     height: 300px;
     border: 1px solid rgba(255, 255, 255, 0.416);
     border-radius: 50px;
     background: #ece5da52;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     margin: 20px;
 }
 .flavorOfTheIcecream{
@@ -32,24 +59,39 @@
 }
 .icecream{
     width: 220px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-transition-property: width;
+    -o-transition-property: width;
     transition-property: width;
-    transition-duration: 200ms;
-    transition-timing-function: ease;
-    transition-delay: 40ms;
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-transition-delay: 40ms;
+         -o-transition-delay: 40ms;
+            transition-delay: 40ms;
     margin: 20px 0 0 0;
 }
 .icecream:hover{
     width: 190px;
-    transition-duration: 100ms;
-    transition-timing-function: ease;
+    -webkit-transition-duration: 100ms;
+         -o-transition-duration: 100ms;
+            transition-duration: 100ms;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
 }
 .authorizationInnerContainer{
     text-align: center;
     margin-top: 40px;
     font-size: 20px;
     background: #ece5da52;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     padding: 50px;
     
 }
@@ -68,24 +110,42 @@
     height: 100vh;
 }
 #locatonInnerContainer{
-    background-image: url('/project/images/chocolateBack.jpg');
+    background-image: url('project/images/chocolateBack.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     width: 100%;
     height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #lastContainerMain{
     width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 350px;
     border: 2px solid black;
     font-size: 25px;
@@ -105,16 +165,25 @@ button{
 }
 #footerInnerContianer{
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
     background-color: #ffffff;
     height: 20%;
 }
 #footerInnerContianer div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 #footerInnerContianer img{
     margin: 5px 10px;
@@ -136,6 +205,8 @@ button{
     margin: 0px 15px;
     background-color: #36171b;
     position: absolute;
+    -webkit-transition: width 300ms ease;
+    -o-transition: width 300ms ease;
     transition: width 300ms ease;
 }
 .lastInnerElement:hover::after{
@@ -148,15 +219,22 @@ button{
     border: 1px solid #36171b;
     background-color: white ;
     color: #36171b;
+    -webkit-transition-property: opacity color font-weight box-shadow;
+    -o-transition-property: opacity color font-weight box-shadow;
     transition-property: opacity color font-weight box-shadow;
-    transition-duration: 400ms;
-    transition-timing-function: ease;
+    -webkit-transition-duration: 400ms;
+         -o-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease;
 }
 button:hover{
     opacity: 0.8;
     color: #36171b;
     font-weight: bold;
-    box-shadow: #da3dab 1px 3px ;
+    -webkit-box-shadow: #da3dab 1px 3px ;
+            box-shadow: #da3dab 1px 3px ;
     cursor: pointer;
 }
 button:active{

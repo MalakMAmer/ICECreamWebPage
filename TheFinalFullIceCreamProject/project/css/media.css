@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 @media screen and (max-width : 600px){
     #lastContainerMain{
@@ -30,23 +37,39 @@
     }
     .icecream{
         width: 130px;
+        -webkit-transition-property: width;
+        -o-transition-property: width;
         transition-property: width;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
+        -webkit-transition-duration: 200ms;
+             -o-transition-duration: 200ms;
+                transition-duration: 200ms;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease;
     }
     .icecream:hover{
         width: 135px;
+        -webkit-transition-property: width;
+        -o-transition-property: width;
         transition-property: width;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
+        -webkit-transition-duration: 200ms;
+             -o-transition-duration: 200ms;
+                transition-duration: 200ms;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease;
     }
     .lastInnerElement{
         margin: 8px;
     }
     #footerInnerContianer div{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 50px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 @media screen and (max-height:500px) and (orientation: landscape){
@@ -89,23 +112,39 @@
     }
     .icecream{
         width: 130px;
+        -webkit-transition-property: width;
+        -o-transition-property: width;
         transition-property: width;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
+        -webkit-transition-duration: 200ms;
+             -o-transition-duration: 200ms;
+                transition-duration: 200ms;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease;
     }
     .icecream:hover{
         width: 135px;
+        -webkit-transition-property: width;
+        -o-transition-property: width;
         transition-property: width;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
+        -webkit-transition-duration: 200ms;
+             -o-transition-duration: 200ms;
+                transition-duration: 200ms;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease;
     }
     .lastInnerElement{
         margin: 8px;
     }
     #footerInnerContianer div{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 50px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #bodyContainer{
         padding: 10;

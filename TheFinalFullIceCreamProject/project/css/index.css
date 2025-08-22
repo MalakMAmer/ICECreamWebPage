@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
@@ -11,7 +18,7 @@ body{
     background-color: #f8f7f2;
 }
 #titleInnerContaianer{
-    background-image: url('/project/images/WelcomeBack.jpg');
+    background-image: url('project/images/WelcomeBack.jpg');
     background: blur(0.5);
     background-repeat: no-repeat;
     background-size:cover;
@@ -21,9 +28,15 @@ body{
     position: relative;
 }
 #headerInnnerContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0px 35px;
     height: 180px;
     background-color: #ffffff;
@@ -32,10 +45,16 @@ body{
 .icon{
     width: 30px;
     height: 30px;
+    -webkit-transition: -webkit-transform 600ms ease;
+    transition: -webkit-transform 600ms ease;
+    -o-transition: transform 600ms ease;
     transition: transform 600ms ease;
+    transition: transform 600ms ease, -webkit-transform 600ms ease;
 }
 .icon:hover{
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+            transform: rotate(10deg);
     cursor: pointer;
 }
 .logo1{
@@ -50,7 +69,9 @@ body{
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 h1 , h2{
     margin: -30px;
