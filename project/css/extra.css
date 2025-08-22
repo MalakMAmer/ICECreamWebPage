@@ -1,0 +1,189 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+#headerInnnerContainer div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+#searchinput{
+    width: 200px;
+    height: 24px;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 4px solid #36171b;
+    display: none;
+    z-index: 2;
+}
+#searchinput::-webkit-input-placeholder{
+    color: rgba(172, 155, 112, 0.655);
+}
+#searchinput::-moz-placeholder{
+    color: rgba(172, 155, 112, 0.655);
+}
+#searchinput:-ms-input-placeholder{
+    color: rgba(172, 155, 112, 0.655);
+}
+#searchinput::-ms-input-placeholder{
+    color: rgba(172, 155, 112, 0.655);
+}
+#searchinput::placeholder{
+    color: rgba(172, 155, 112, 0.655);
+}
+.menu{
+    position: absolute;
+    position: absolute;
+    top: 90px;
+    z-index: 5;
+    width: 125px;
+    font-size: 20px;
+    right: 36px;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: none;
+}
+.menu ul{
+    list-style: none;
+    border: 2px solid #36171b;
+    border-radius: 20px;
+    padding: 10px;
+    background: #36171b24;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+  
+a{
+   text-decoration: none;
+   display: block;
+   color: rgb(47, 7, 14);
+   font-weight: bold;
+   margin: 20px 0;
+   -webkit-transition: color 200ms ease;
+   -o-transition: color 200ms ease;
+   transition: color 200ms ease;
+}
+a:hover{
+    color: #ffffff;
+}
+
+
+/*//*/
+
+/* About Us Section Styling */
+#aboutUsContainer {
+    background-color: #fff0f6;
+    padding: 80px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .aboutUsWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1100px;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .aboutUsImage {
+    display: inline;
+  }
+  
+  .aboutUsImage img {
+    width: 400px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .aboutUsContent {
+    display: inline;
+    width: 50%;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #36171b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+  }
+  
+  .aboutUsContent h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: #da3dab;
+  }
+  
+  .aboutUsContent p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .aboutUsWrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  
+    .aboutUsContent {
+      text-align: center;
+      padding: 30px 20px;
+    }
+  }
+  
