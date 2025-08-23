@@ -1,10 +1,12 @@
 # Ice Cream Website 🍦
 
-Welcome to the Ice Cream Website! This project is designed to give users an exciting experience with delicious ice cream options. You can explore various ice cream flavors, check out nutritional details, and enjoy a vibrant, user-friendly layout.
+This project is about an imaginary icecream shope's website, it consists of two pages: a home page and a login/signup page.<br>
+the project is written by html, css and javascript.
 
 ## Features:
 - Interactive layout with hover effects
-- Nutritional information displayed for each flavor
+- some media queries were used for responsive design.
+- Nutritional information displayed for each flavor when clicking using JS(imaginary)
 - Fun and engaging user interface
 
 ## Technologies Used:
@@ -12,8 +14,39 @@ Welcome to the Ice Cream Website! This project is designed to give users an exci
 - **CSS** for styling
 - **JavaScript** for interactivity
 
-## How to Run:
-1. Clone the repository
-   ```bash
-   git clone https://github.com/pretty-bunny/ICECreamWebPage.git
+## Project Structure
+<pre>
+  ICECreamWebPage/
+├── project/
+      ├── CSS/
+          ├── body.css
+          ├── extra.css
+          ├── index.css
+          ├── media.css
+          ├── moreInfoContainer.css
+      ├── images/
+      ├── js/
+         ├── index.js
+├── index.html
+├── login/
+      ├── CSS/
+          ├── login.css
+      ├── img/
+      ├── login.js
+├── index.html
+├── login.html
+</pre>
+
+## Technologies Used
+<pre>
+  HTML5
+  CSS3
+  responsivce Layout (using media queries)
+  JavaScript
+</pre>
+
+## Pages Links
+ > [Home Page](https://malakmamer.github.io/ICECreamWebPage/)
+ > [Login/Sigup Page](https://malakmamer.github.io/ICECreamWebPage/login.html)
+
 
