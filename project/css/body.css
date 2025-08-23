@@ -110,7 +110,7 @@
     height: 100vh;
 }
 #locatonInnerContainer{
-    background-image: url('project/images/chocolateBack.jpg');
+    background-image: url('../images/chocolateBack.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;

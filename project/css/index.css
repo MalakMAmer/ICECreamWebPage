@@ -18,7 +18,7 @@ body{
     background-color: #f8f7f2;
 }
 #titleInnerContaianer{
-    background-image: url('project/images/WelcomeBack.jpg');
+    background-image: url('../images/WelcomeBack.jpg');
     background: blur(0.5);
     background-repeat: no-repeat;
     background-size:cover;
